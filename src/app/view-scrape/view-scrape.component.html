@@ -1,0 +1,64 @@
+<mat-card class="card-scrape">
+	{{this.scrapingOptions.datascrapingform.profilename.value}}
+	{{this.scrapingOptions.isscrapeprofilevaild}}
+  <mat-card-header>
+    	<mat-card-title>Scrape</mat-card-title>
+    	<mat-card-subtitle>Mode: {{this.scrapingOptions.scrapemode}}</mat-card-subtitle>
+  </mat-card-header>
+  
+
+  <mat-card-content>
+    <p>
+      Note:<br>
+      - every newely visted profile will be stored with minimal settings and info,
+
+    </p>
+  </mat-card-content>
+
+  <mat-card-actions>
+
+  	<div class="containerFormFields">
+
+  	<mat-form-field class="example-full-width" color="rgba(0,0,0,0.5)">
+
+        <mat-label>Profile id or name</mat-label>
+        <input 
+                matInput 
+                type="text"
+                placeholder="name of the profile to scrape"
+                value="wodzislawslaski"
+
+
+                [formControl]="scrapingOptions.datascrapingform.profilename"
+        />
+           
+   	</mat-form-field>
+
+   </div>
+
+   <div class="buttons-row">
+
+	    <button 
+	    	(click)="validateProfile()"
+
+	    	mat-button 
+	    	color="primary"
+	    	[disabled]="queryprofileinfo.isonline"
+	    >Validate</button>
+	    <button mat-button color="primary" *ngIf="scrapingOptions.isscrapeprofilevaild">Create Saved Profile</button>
+	    <button mat-button color="primary" [disabled]="!scrapingOptions.isscrapeprofilevaild">Scrape</button>
+	    
+  	</div>
+
+
+
+   
+  </mat-card-actions>
+
+</mat-card>
+
+
+<app-profile-info
+	[receviedquerprofileinfo]="queryprofileinfo"
+></app-profile-info>
+

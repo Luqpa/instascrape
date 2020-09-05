@@ -1,0 +1,106 @@
+.txtSemiRegular{font-weight: 400;}
+.txtRegular {font-weight: 500;}
+.txtMedium {font-weight: 600;}
+
+.card-profileinfo {
+	padding:0;margin:15px 0;
+	color:#000;
+	background:transparent;
+}
+
+
+.card-profileinfo .container-matcard-header {
+	padding:12px 8px;
+
+	display:flex;
+	flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: flex-start;
+
+	background:#c2185b;
+}
+
+.card-profileinfo .container-matcard-header mat-card-title {
+	margin:0 0 5px 0;
+	flex:0 0 100%;
+	color:#fff;
+}
+
+.card-profileinfo .container-matcard-header mat-card-subtitle {
+	margin:0;
+	flex:0 0 100%;
+	color:#fff;
+}
+
+.card-profileinfo .container-inner-matcard {
+	padding:16px;
+}
+
+.card-profileinfo mat-card-content .container-matcard-row {
+	margin:30px 0;
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-profileinfo mat-card-content .container-matcard-row .container-matcard-row-entry-full
+{
+	flex:0 0 100%;
+
+}
+.card-profileinfo mat-card-content .container-matcard-row .container-matcard-row-entry-half
+{
+	flex:0 0 50%;
+
+}
+.card-profileinfo mat-card-content .container-matcard-row .container-matcard-row-entry-third
+{
+	flex:0 0 30%;
+
+	text-align: center;
+}
+
+
+.card-profileinfo mat-card-content .container-matcard-row .subsectionTitle {
+	padding-bottom:5px;margin:15px 0;
+	width:100%;
+
+	font-size: 16px;
+	font-weight: 500;
+
+	border-bottom:1px solid #c2185b57;
+}
+
+.card-profileinfo mat-card-content .container-matcard-row .container-matcard-row-entry-third span
+{
+	font-size:16px;
+}
+
+.card-profileinfo mat-card-content .container-matcard-row span .mat-badge-content
+{
+	width:45px;height:30px;
+	right:-45px;
+	line-height: 30px;
+}
+
+.card-profileinfo mat-card-content .imgLogo {
+	margin:auto;
+	max-width: 120px;height: auto;
+	display: block;
+}
+
+.card-profileinfo mat-card-content .container-matcard-row  .containerInfoEntry {
+	margin:10px 0;
+}
+
+.card-profileinfo mat-card-content .container-matcard-row  .containerInfoEntry h5 {
+	margin:0;
+
+	font-size: 16px;
+	font-weight: 500;
+}
+.card-profileinfo mat-card-content .container-matcard-row  .containerInfoEntry .containerText {
+	font-size:16px;
+}

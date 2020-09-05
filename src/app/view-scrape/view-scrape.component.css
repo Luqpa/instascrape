@@ -1,0 +1,37 @@
+.card-scrape {
+	background:transparent;
+
+	color:#000;
+}
+
+.card-scrape mat-card-title{
+	color:#000;
+}
+
+.card-scrape mat-card-subtitle{
+	color:#000;
+}
+
+.card-scrape  mat-card-actions .containerFormFields
+{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.card-scrape  mat-card-actions .containerFormFields mat-form-field {
+	flex:0 0 100%;
+}
+
+.card-scrape mat-label {
+	color:rgba(0,0,0,0.5);
+}
+
+.card-scrape  mat-card-actions .containerFormFields mat-form-field input[type="text"]{
+	border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+.card-scrape  mat-card-actions .mat-button.mat-button-disabled.mat-button-disabled {
+	color:rgba(0,0,0,0.3);
+}
+

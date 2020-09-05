@@ -1,0 +1,136 @@
+<mat-card class="card-profileinfo">
+	<div class="container-matcard-header">
+
+			<mat-card-title>
+				<span class="txtRegular"> Profile: </span>
+
+				<span 
+							class="txtSemiRegular"
+							*ngIf="receviedquerprofileinfo.dataonline">  {{receviedquerprofileinfo.dataonline.profilename}}  </span>
+			</mat-card-title>
+			<mat-card-subtitle>
+				<span class="txtRegular"> Url: </span>
+
+				<span 
+						class="txtSemiRegular"
+						*ngIf="receviedquerprofileinfo.dataonline"> {{receviedquerprofileinfo.dataonline.profileurl}} </span>
+			</mat-card-subtitle>
+
+	</div>
+
+	<div class="container-inner-matcard">
+
+		<mat-card-content>
+
+		<div class="container-matcard-row">
+			<h5 class="subsectionTitle">
+				Profile Numbers:
+			</h5>
+
+
+			<div 
+
+			class="container-matcard-row-entry-third">
+			 	<span
+			 		*ngIf="receviedquerprofileinfo.dataonline"
+			 		[matBadge]="receviedquerprofileinfo.dataonline.postsno" matBadgePosition="after above" matBadgeOverlap="false">
+			 		Posts number
+			 	</span>
+			</div>
+			<div class="container-matcard-row-entry-third">
+			 	<span 
+			 	*ngIf="receviedquerprofileinfo.dataonline"
+			 	[matBadge]="receviedquerprofileinfo.dataonline.followers" matBadgePosition="after above" matBadgeOverlap="false">Followers</span>
+			</div>
+			<div class="container-matcard-row-entry-third">
+			 	<span 
+			 	*ngIf="receviedquerprofileinfo.dataonline"
+			 	[matBadge]="receviedquerprofileinfo.dataonline.following" matBadgePosition="after above" matBadgeOverlap="false">Following</span>
+			</div>
+		</div>
+
+		<div class="container-matcard-row">
+			<h5 class="subsectionTitle">
+				Profile Header:
+			</h5>
+
+			<div 
+				class="container-matcard-row-entry-half">
+				<span class="txtRegular"> Profile Title / Name: </span> <br/> 
+				<span *ngIf="receviedquerprofileinfo.dataonline"> 
+					{{receviedquerprofileinfo.dataonline.profilename}} 
+
+				</span> 
+			</div>
+			<div 
+				class="container-matcard-row-entry-half">
+				
+				<img 
+					class="imgLogo"
+					*ngIf="receviedquerprofileinfo.dataonline"
+					[src]="receviedquerprofileinfo.dataonline.logo.url"
+					[alt]="receviedquerprofileinfo.dataonline.logo.alt"
+				/> 
+			</div>
+		</div>
+
+
+
+		<div class="container-matcard-row">
+			
+			
+			
+			<h5 class="subsectionTitle">
+				Profile Text:
+			</h5>
+
+			<div class="container-matcard-row-entry-full">
+
+				
+
+				<div class="containerInfoEntry">
+					<h5> Profile Text Title: </h5>
+
+					<div 
+						*ngIf="receviedquerprofileinfo.dataonline"
+						class="containerText"
+					>
+						{{receviedquerprofileinfo.dataonline.profiletext.title}}
+					</div>
+				</div>
+
+				<div class="containerInfoEntry">
+
+					<h5>Profile Text: </h5>
+					<div 
+
+					*ngIf="receviedquerprofileinfo.dataonline"
+					class="containerText"
+					>
+					{{receviedquerprofileinfo.dataonline.profiletext.text}}
+					</div>
+
+				</div>
+				<div class="containerInfoEntry">
+
+					<h5>Profile Text Assets, hashes, links etc: </h5>
+					<div 
+
+					*ngIf="receviedquerprofileinfo.dataonline"
+					class="containerText"
+					>
+					...
+					</div>
+
+				</div>
+			</div>
+			<div class="container-matcard-row-entry-full">
+				
+			</div>
+		</div>
+
+
+		</mat-card-content>
+
+	</div>
+</mat-card>

@@ -1,0 +1,11 @@
+{
+  "port": 3000,
+  "protocol": "http:",
+  "ip": "89.25.222.116",
+  "mainurl": "scraperinstagram",
+  "endpoints": {
+  	"main": "/",
+  	"profileinfo": "/profileinfo",
+  	"validate": "/profileinfo"
+  }
+}

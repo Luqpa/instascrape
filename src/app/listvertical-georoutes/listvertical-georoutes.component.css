@@ -1,0 +1,127 @@
+.containerSelectedGeoRouteInfo {}
+.containerSelectedGeoRouteInfo mat-card {
+    min-height:100px;
+
+    display:flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content:flex-start;
+
+    color:#000;
+    text-align:left;
+    background:#064a87;
+}
+.containerSelectedGeoRouteInfo mat-card mat-card-header {
+    min-height:80px;
+
+    flex:100%;
+
+    color:#fff;
+    text-align:left;
+}
+
+.containerSelectedGeoRouteInfo mat-card mat-card-header .mat-card-avatar {
+    display:flex;
+
+    align-items: center;
+    justify-content:center;
+}
+
+.containerSelectedGeoRouteInfo mat-card mat-card-header mat-card-title
+{
+    flex:0 0 100%;
+
+    color:#fff;
+}
+
+.containerSelectedGeoRouteInfo mat-card mat-card-header mat-card-subtitle
+{
+    flex:0 0 100%;
+
+    color:#fff;
+}
+
+.containerSelectedGeoRouteInfo mat-card mat-card-content
+{
+    min-height: 40px;
+    flex:0 0 100%;
+
+    color:#fff;
+}
+
+.containerSelectedGeoRouteInfo mat-card mat-card-content p
+{
+    color:#fff;
+}
+
+.listVerticalGeoRoutes { /*mat-list*/
+    color:#fff;
+}
+
+.listVerticalGeoRoutes mat-list-option {
+    margin:5px 0;
+    width:100%;height:unset;
+    color:#000;
+
+    opacity:0.6;
+
+    border-radius:4px;
+    border:1px solid #064a87;
+    background:#afbace;
+}
+
+.listVerticalGeoRoutes mat-list-option:hover {
+    opacity:1;
+}
+
+.listVerticalGeoRoutes mat-list-option .containerInnerGeoListItem {
+    padding:5px 0;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+.listVerticalGeoRoutes mat-list-option .containerInnerGeoListItem .containerIcon
+{
+    padding-right:5px;
+
+    border-right:1px solid rgba(0,0,0,0.1);
+}
+
+.listVerticalGeoRoutes mat-list-option .containerInnerGeoListItem .containerIcon mat-icon
+{
+    color:#064a87;
+}
+
+.listVerticalGeoRoutes mat-list-option .containerInnerGeoListItem .containerContent
+{
+    margin-left:10px;
+}
+
+.listVerticalGeoRoutes mat-list-option .listVerticalGeoRoutesHeader {
+    width:100%;
+    flex:0 0 100%;
+
+    font-size:1.1vw;
+    font-weight: 400;
+    /*border-bottom:1px solid rgba(0,0,0,0.1);*/
+}
+
+.listVerticalGeoRoutes mat-list-option .listVerticalGeoRoutesRoute
+{
+    width:100%;
+    flex:0 0 100%;
+
+    font-size:1.0vw;
+    font-weight: 300;
+}
+
+/*fix for padding in the list ... */
+:host ::ng-deep .mat-list-option-content { padding: 10px!important; }
+
+/*selected item*/
+.listVerticalGeoRoutes mat-list-option.mat-list-single-selected-option {
+    opacity:1;
+}

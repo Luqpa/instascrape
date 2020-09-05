@@ -1,0 +1,31 @@
+mat-toolbar {
+	max-width:100%;
+	height:100%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	align-content:flex-start;
+
+}
+
+mat-toolbar mat-toolbar-row {
+	height: unset;
+}
+
+mat-toolbar mat-selection-list {
+	flex:0 0 100%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	align-content: flex-start;
+}
+
+mat-toolbar mat-selection-list mat-list-option
+{
+	flex:0 0 100%;
+	height:unset;
+}

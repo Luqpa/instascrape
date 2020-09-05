@@ -1,0 +1,62 @@
+listvertical-georoutes
+<div class="containerSelectedGeoRouteInfo">
+
+    <mat-card
+        *ngIf="selectedListItem">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">
+                    local_shipping
+                </mat-icon>
+            </div>
+            <mat-card-title>  {{selectedListItem[0].title}} </mat-card-title>
+            <mat-card-subtitle>{{selectedListItem[0].subtitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+              Any additional info ?
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+    
+</div>
+
+
+<mat-selection-list 
+    #georouteslist
+    [(ngModel)]="selectedListItem"
+    (ngModelChange)="onNgModelChange($event)"
+
+    [multiple]="false"
+
+    role="list" 
+    class="listVerticalGeoRoutes">
+
+    <mat-list-option
+
+        *ngFor="let geolistitem of arrgeolistitems;index as i;"
+        [selected]="i == 0"
+        [value]="geolistitem"
+        role="listitem"
+    >
+        <div class="containerInnerGeoListItem">
+            <div class="containerIcon">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">room</mat-icon>
+            </div>
+            <div class="containerContent">
+                <div class="listVerticalGeoRoutesHeader">
+                    {{geolistitem.title}}
+                </div>
+                
+
+            </div>
+
+                
+        </div>
+    
+    </mat-list-option>
+    
+  </mat-selection-list>
+
+    {{selectedListItem | json}}

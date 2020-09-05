@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+    bbb
+  </mat-toolbar-row>
+
+  
+
+  <mat-toolbar-row>
+   aaaaa
+  </mat-toolbar-row>
+
+
+  <mat-toolbar-row>
+   
+   <mat-selection-list #selectedmenuitem [multiple]="false">
+  		<mat-list-option *ngFor="let menuitem of menuItems" [value]="menuitem">
+    		{{menuitem}}
+  		</mat-list-option>
+	</mat-selection-list>
+
+	
+	 
+	
+
+   
+
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+  	 {{selectedmenuitem.selectedOptions.selected[0]?.value}}
+  </mat-toolbar-row>
+
+
+</mat-toolbar>
