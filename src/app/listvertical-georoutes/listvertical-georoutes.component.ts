@@ -4,7 +4,7 @@ import { AfterViewInit, Component, OnInit, Directive, ElementRef, ViewChild, Que
 /*data models imports*/
 import {itemGeoRoute, listGeoRouteManagement} from '../models/models-generic';
 
-
+ 
 @Component({
   selector: 'app-listvertical-georoutes',
   templateUrl: './listvertical-georoutes.component.html',

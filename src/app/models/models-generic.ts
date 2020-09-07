@@ -21,3 +21,33 @@ export class itemGeoRoute {
         this.descriptions = descriptions;
     }
 }
+
+
+/*
+* Component: view-osmmap
+*
+*/ 
+
+export class osmMapManagement {
+    cssmapid:string;
+    csscontainerid:string
+    objmap:any;
+
+    constructor(cssmapid, csscontainerid, objmap)
+    {
+        this.cssmapid = cssmapid;
+        this.csscontainerid = csscontainerid;
+        this.objmap = objmap;
+    }
+
+    adjustmaptofitcontainer (){
+        console.log('adjustmaptofitcontainer');
+        let nodeContainerMapHolder = document.getElementById(this.csscontainerid);
+        let nodeContainerMap = document.getElementById(this.cssmapid);
+        console.log(this.csscontainerid);
+        console.log(nodeContainerMapHolder.clientHeight);
+
+        //nodeContainerMap.style.height = nodeContainerMapHolder.offsetHeight+'px';
+        this.objmap.updateSize();
+    }
+}

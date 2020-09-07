@@ -40,6 +40,7 @@ import { ViewScrapeComponent } from './view-scrape/view-scrape.component';
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { ViewSavedprofilesComponent } from './view-savedprofiles/view-savedprofiles.component';
 import { ListverticalGeoroutesComponent } from './listvertical-georoutes/listvertical-georoutes.component';
+import { ViewOsmmmapComponent } from './view-osmmmap/view-osmmmap.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { ListverticalGeoroutesComponent } from './listvertical-georoutes/listver
     ViewScrapeComponent,
     ProfileInfoComponent,
     ViewSavedprofilesComponent,
-    ListverticalGeoroutesComponent
+    ListverticalGeoroutesComponent,
+    ViewOsmmmapComponent
   ],
   imports: [
     BrowserModule,
